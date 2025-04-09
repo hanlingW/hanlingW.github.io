@@ -9,30 +9,39 @@
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
-      background-color: #f4f4f4;
+      background: linear-gradient(to right, #eef2f3, #ffffff);
       color: #333;
+      transition: all 0.3s ease;
     }
     header {
-      background-color: #1a1a1a;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
       padding: 2rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     h1 {
       margin-bottom: 0.5rem;
+      font-size: 2.5rem;
     }
     .section {
       padding: 2rem 4rem;
     }
     .project {
       background-color: white;
-      margin-bottom: 1.5rem;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
     }
     .project h2 {
       margin-top: 0;
+      font-size: 1.5rem;
+      color: #203a43;
     }
     a {
       color: #007acc;
@@ -41,11 +50,27 @@
     a:hover {
       text-decoration: underline;
     }
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #005f99;
+    }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       font-size: 0.9rem;
       color: #666;
+      background-color: #fafafa;
     }
   </style>
 </head>
@@ -53,7 +78,7 @@
   <header>
     <h1>Hanling Wang</h1>
     <p>AI-Driven Interactive Designer & Creative Technologist</p>
-    <p><a href="mailto:hanling0322@gmail.com">hanling0322@gmail.com</a></p>
+    <a href="mailto:hanling0322@gmail.com" style="color: #aad8ff; text-decoration: underline;">hanling0322@gmail.com</a>
   </header>
 
   <div class="section">
@@ -62,25 +87,25 @@
     <div class="project">
       <h2>&lt;U see ego&gt; — Narrative RPG Game</h2>
       <p>A branching narrative game built in RPG Maker that explores post-graduation identity confusion through surreal storytelling and original music/art.</p>
-      <p><a href="https://sites.google.com/ucsd.edu/vis160hanglingwang/home" target="_blank">Project Website</a></p>
+      <a href="https://sites.google.com/ucsd.edu/vis160hanglingwang/home" target="_blank" class="button-link">Project Website</a>
     </div>
 
     <div class="project">
       <h2>Digital Fortune Telling</h2>
       <p>An interactive p5.js experience where hand gestures trigger sound and animation, simulating a meditative ritual in digital space. Designed to explore digital serenity and embodied ritual.</p>
-      <p><a href="https://drive.google.com/file/d/1MXPLnvUcioE2cBs5IJDFseneszwXvXgI/view?usp=drive_link" target="_blank">View Demo</a></p>
+      <a href="https://drive.google.com/file/d/1MXPLnvUcioE2cBs5IJDFseneszwXvXgI/view?usp=drive_link" target="_blank" class="button-link">View Demo</a>
     </div>
 
     <div class="project">
       <h2>Visual Philosophy Poster: Pantheism to Agnosticism</h2>
       <p>A symbolic visual storytelling project created with Adobe Photoshop and Illustrator, exploring spiritual evolution through collage, poetry, and AI-generated elements.</p>
-      <p><a href="https://drive.google.com/file/d/1sETMtCDwbF2qsvmQW8cuVBtl2mMqT7nD/view?usp=drive_link" target="_blank">View Poster</a></p>
+      <a href="https://drive.google.com/file/d/1sETMtCDwbF2qsvmQW8cuVBtl2mMqT7nD/view?usp=drive_link" target="_blank" class="button-link">View Poster</a>
     </div>
 
     <div class="project">
       <h2>Real-time Piano Visualization</h2>
       <p>A generative p5.js animation syncing falling visual elements to live piano input using frequency and amplitude mapping. Inspired by rhythm games and visual soundscapes.</p>
-      <p><a href="https://drive.google.com/file/d/1IM-C8uluWmz1vAG1_RaRJ4UmNabMKY-W/view?usp=drive_link" target="_blank">View Demo</a></p>
+      <a href="https://drive.google.com/file/d/1IM-C8uluWmz1vAG1_RaRJ4UmNabMKY-W/view?usp=drive_link" target="_blank" class="button-link">View Demo</a>
     </div>
   </div>
 
